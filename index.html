@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Lensi — curated visual list" />
+    <title>Lensi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="logo" href="#" aria-label="Lensi home">Lensi</a>
+        <p class="tagline">Curated collection</p>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="intro" aria-labelledby="intro-heading">
+        <h1 id="intro-heading" class="intro__title">Explore</h1>
+        <p class="intro__text">
+          Tap any card to open its link. Update images and destinations in
+          <code>js/items.js</code>.
+        </p>
+      </section>
+
+      <ul id="item-list" class="item-grid" role="list"></ul>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Lensi</p>
+    </footer>
+
+    <script src="js/items.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
